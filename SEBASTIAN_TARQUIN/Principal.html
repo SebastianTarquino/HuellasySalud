@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Huellas y Salud</title>
+</head>
+
+<body>
+
+    <div class="contenedor-imagen">
+        <img src="./Imagenes/Principal.jpg" alt="Imagen principal" class="imagen-lateral" loading="lazy">
+    </div>
+
+    <nav class="navbar">
+        <ul class="secciones" id="secciones">
+            <li><a href="#">Inicio</a><i class="fa-solid fa-house"></i></li>
+            <li><a href="#">Productos</a><i class="fa-solid fa-bone"></i></li>
+            <li><a href="#">Servicios</a><i class="fa-solid fa-store"></i></li>
+            <li><a href="#">Contacto</a><i class="fa-solid fa-id-badge"></i></li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="menu-lateral" class="menu-oculto">
+            <h3>Únete a nosotros</h3><br>
+            <a href="#" class="cerrar-menu">Registrarse</a><br><br>
+            <h3>¿Ya tienes una cuenta?</h3><br>
+            <a href="#" class="cerrar-menu">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Huellas y Salud</h1>
+        <p>¿Te apasiona el mundo animal? Si eres amante de los perros, los gatos o la fauna salvaje, descubre
+            <strong>Huellas y Salud</strong>, una web de animales donde podrás encontrar los mejores productos y
+            servicios para brindarles un mejor cuidado a tus mascotas.
+        </p>
+    </header>
+
+    <section class="Products">
+        <h2>ALGUNOS DE NUESTROS PRODUCTOS</h2><br>
+        <div class="Contenedor-Productos">
+            <article>
+                <img src="./Imagenes/Smartbones_Pollo.png" alt="Smartbones Pollo Mini X 8 Unidades" loading="lazy">
+                <h3>Smartbones Pollo Mini X 8 Unidades</h3>
+                <p>Alimento</p>
+            </article>
+            <article>
+                <img src="./Imagenes/Comida_Gato.png" alt="Wow Cat - Pavo Cocinado sin Refrigeración" loading="lazy">
+                <h3>Wow Cat - Pavo Cocinado sin Refrigeración</h3>
+                <p>Alimento</p>
+            </article>
+            <article>
+                <img src="./Imagenes/Cacauate.png" alt="Cacahuate para Loros y Palomas" loading="lazy">
+                <h3>Cacahuate para Loros y Palomas</h3>
+                <p>Alimento</p>
+            </article>
+        </div>
+    </section>
+
+    <div class="ver-mas">
+        <a href="#" class="btn-ver-mas">Conocer más productos...</a>
+    </div><Br>
+
+    <section class="Services">
+        <h2>ALGUNOS DE NUESTROS SERVICIOS</h2>
+        <div class="Contenedor-Servicios">
+            <article>
+                <img src="./Imagenes/ConsultaM.png" alt="Consultas Medicas" loading="lazy">
+            </article>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
