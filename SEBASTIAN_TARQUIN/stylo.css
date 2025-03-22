@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+}
+
+:root {
+    --color-principal: #0f0f0f;
+    --color-secundario: rgb(24, 104, 112);
+    --color-font: rgb(253, 253, 253);
+    --color-transition: rgb(51, 135, 191);
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    color: var(--color-font);
+}
+
+.contenedor-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 180px;
+    left: 20px;
+}
+
+.imagen-lateral {
+    width: 350px;
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    height: auto;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background: linear-gradient(to right, var(--color-principal), var(--color-secundario));
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+.secciones {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.secciones li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+}
+
+.secciones li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-font);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.secciones li:hover {
+    background-color: var(--color-transition);
+    cursor: pointer;
+}
+
+/* Iconos de la sección */
+.secciones i {
+    font-size: 16px;
+}
+
+
+#menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+}
+
+.menu-activo {
+    right: 0 !important;
+}
+
+.cerrar-menu {
+    background: var(--color-secundario);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+body.menu-abierto::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100w;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 50%;
+    margin-left: 400px;
+    background-color: white;
+    color: #0f0f0f;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.Contenedor-Productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+article {
+    color: #0f0f0f;
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+article img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Products h2 {
+    color: #0f0f0f;
+}
+
+.Products article h3 {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 15px;
+}
+
+.ver-mas {
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    /* background-color: #007bff; */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-ver-mas:hover {
+    color: var(--color-font);
+    background-color: var(--color-secundario);
+    font-weight: bold
+}
+
+.Contenedor-Servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Services h2 {
+    color: #0f0f0f;
+}
